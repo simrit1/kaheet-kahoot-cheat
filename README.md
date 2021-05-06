@@ -10,7 +10,7 @@ Simple kahoot cheat, just paste the code to your console and you're done!
 3. Paste this:
 
 ```js
-fetch("https://raw.githubusercontent.com/pxtrez/kaheet-kahoot-cheat/master/dist/script.js")
+fetch("https://raw.githubusercontent.com/pxtrez/kaheet-kahoot-cheat/main/dist/script.js")
 .then((res) => res.text()
 .then((t) => eval(t)))
 ```
