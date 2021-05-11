@@ -28,7 +28,7 @@ e.g. `https://play.kahoot.it/v2/lobby?quizId=` **`4487beab-3d31-4e9e-8d94-94ef15
 cheat supports images in kahoot quizzes!
 
 ## Bugs
-* When a question has more than one correct answer, the answer is not displayed.
+- 
 
 ## Other
 Pull requests are welcome!
