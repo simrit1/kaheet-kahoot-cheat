@@ -4,7 +4,8 @@ Simple kahoot cheat, just paste the code to your console and you're done!
 * [Usage](#Usage "Goto Usage")
 * [Bugs](#Bugs "Goto Bugs")
 
-[Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet!
+[Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet!<br><br>
+![gui](./docs/kaheet!.png)<br><br>
 
 or
 
