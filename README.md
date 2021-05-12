@@ -1,5 +1,4 @@
 # kaheet-kahoot-cheat
-Simple kahoot cheat, just paste the code to your console and you're done!
 There are 2 versions of cheat:
 1. [Software: nice and simple gui](#Download "Goto Download")
 2. [Script: console version](#Console "Goto Console")
