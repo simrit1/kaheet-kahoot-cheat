@@ -10,7 +10,7 @@ There are 2 versions of cheat:
 [Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet!<br><br>
 <details><summary>GUI</summary>
 <img src="./docs/kaheet!.png"><br><br>
-<details>
+</details>
 
 
 or
