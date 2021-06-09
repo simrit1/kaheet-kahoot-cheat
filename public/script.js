@@ -14,10 +14,6 @@
 *** Github repositiory: https://github.com/pxtrez/kaheet-kahoot-cheat/
 */
 
-let short = (val) => {
-    return val.replace(/\s+/g, ' ').trim(); //.replace(/\.+/g, ' ').trim()
-}
-
 let consoleimg = (function() {
     return {
         load: function(ind, { color: c = 'transparent' } = {}) {
@@ -26,7 +22,9 @@ let consoleimg = (function() {
             let reader = new FileReader()
             reader.addEventListener('load', function() {
                 let o = 'background: url(\'' + reader.result + '\') left top no-repeat; font-size: 30px; color: #f6ff51; border: 5px solid #000; display: block; background-size: contain; background-repeat: no-repeat; background-color:' + c
-                console.log(`%c        Question: ${short(question)} || Answer: ${short(answer)}`, o)
+                if (question != "" || answer != "") {
+                    console.log(`%c        Question: ${question} || Answer: ${(answer)}`, o)
+                }
             }, false)
             fetch(ind)
                 .then(reader => reader.blob())
@@ -71,9 +69,18 @@ let getQuizid = (input) => {
             }
             let k = Object.keys(a.questions).length;
             for (let i = 0; i < k; i++) {
+                let img = "";
                 q = { "question": "", "answer": "" };
                 q.question = a.questions[i].question;
-                let img = a.questions[i].image;
+                if (a.questions[i].image) {
+                    img = a.questions[i].image;
+                } else {
+                    if (a.questions[i].image.id) {
+                        img = `https://media.kahoot.it/${a.questions[i].image.id}`;
+                    } else {
+                        throw new Error('Cannot find any image for this question.')
+                    }
+                }
                 if (a.questions[i].type === "content") {
                     quiz.content++;
                 }
@@ -81,12 +88,18 @@ let getQuizid = (input) => {
                     found++;
                     for (let j = 0; j < (a.questions[i].choices).length; j++) {
                         if (a.questions[i].choices[j].correct.toString() == "true") {
-                            q.answer = a.questions[i].choices[j].answer;
+                            if (a.questions[i].choices[j].answer) {
+                                q.answer = a.questions[i].choices[j].answer;
+                            } else {
+                                if (a.questions[i].choices[j].image.id) {
+                                    q.answer = `Only image answer...`;
+                                }
+                            }
                             console.log('%c-----------------', "color:purple");
-                            console.log(`%cQuestion: ${short(q.question)}`, "color:yellow");
-                            console.log(`%cAnswer: ${short(q.answer)}`, "color:yellow");
+                            console.log(`%cQuestion: ${q.question}`, "color:yellow");
+                            console.log(`%cAnswer: ${q.answer}`, "color:yellow");
                             console.log(`Question info: ${(a.questions[i].choices).length} choices, ${a.questions[i].time / 1000} seconds, ${a.questions[i].pointsMultiplier}x points multiplier.`);
-                            if (img != "" && show_images) {
+                            if (img != "") {
                                 consoleimg.load(img, {
                                     color: 'transparent'
                                 })
