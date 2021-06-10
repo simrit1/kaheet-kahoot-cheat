@@ -9,7 +9,7 @@ There are 2 versions of cheat:
 * [Bugs](#Bugs "Goto Bugs")
 
 # Download
-[Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet!<br><br>
+[Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet! (not working)<br><br>
 <details><summary>GUI</summary>
 <img src="./docs/kaheet!.png"><br><br>
 </details>
