@@ -119,7 +119,9 @@ let getQuizid = (input) => {
                     dataPush = { "question": `${q.question}`, "answers": `${q.answer.join('  &  ')}` };
                     data.push(dataPush);
                 } else {
-                    console.warn(`%cQuestion: "${q.question}" has a question type that is unsupported yet and has been skipped. Contact me: pxtrez#0001 and give me a link to the quiz so I can add a question type to the cheat`)
+                    if (a.questions[i].type != "content") {
+                        console.warn(`%cQuestion: "${q.question}" has a question type that is unsupported yet and has been skipped. Contact me: pxtrez#0001 and give me a link to the quiz so I can add a question type to the cheat`)
+                    }
                 }
             }
             time.end = Date.now();
