@@ -1,4 +1,4 @@
-Kaheet script version is no longer maintained, always updated and the best version of cheat is on our [discord](https://dsc.gg/elekcje)<br><br>
+Kaheet program version is no longer maintained, always updated and the best version of cheat is on our [discord](https://dsc.gg/elekcje)<br><br>
 
 ## kaheet-kahoot-cheat
 There are 2 versions of cheat:
