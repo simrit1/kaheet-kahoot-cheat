@@ -1,27 +1,9 @@
-Kaheet program version is no longer maintained, always updated and the best version of cheat is on our [discord](https://dsc.gg/elekcje)<br><br>
-
 ## kaheet-kahoot-cheat
-There are 2 versions of cheat:
 
-1. [Software: nice and simple gui](#Download "Goto Download")
-2. [Script: console version](#Console "Goto Console")
-
-* [Bugs](#Bugs "Goto Bugs")
-
-# Download
-[Download](https://schoolcheats.pxtrez.repl.co/cheats/) kaheet! (not working)<br><br>
-<details><summary>GUI</summary>
-<img src="./docs/kaheet!.png"><br><br>
-</details>
-
-
-or
-
-
-# Console
+# How to use?
 1. Open [kahoot](https://kahoot.it/)
 2. Right click, inspect (open console)
-3. Paste this:
+3. Paste following script:
 
 ```js
 fetch("https://raw.githubusercontent.com/pxtrez/kaheet-kahoot-cheat/main/dist/script.js")
@@ -39,23 +21,18 @@ fetch("https://raw.githubusercontent.com/pxtrez/kaheet-kahoot-cheat/main/dist/sc
 </details>
   
 5. Correct answers should appear in the console. </br></br>
-<img src="./docs/example.png" width="70%"></br></br></br>
+<img src="./docs/preview.png" width="70%"></br></br></br>
 
 cheat supports images in kahoot quizzes!
 
-## You can also use cheat on our <a href="https://dsc.gg/elekcje">discord</a>.
+Join our [Discord](https://dsc.gg/elekcje) to access searching quiz by name, not QuizID<br><br>
+## How to use kaheet bot on discord?
 1. Join our discord.
 2. Open `︴🤖・commands` channel.
-3. Type ` .kaheet <quizid>`.
-<details>
-  <summary>What is quizid?</summary>
-  QuizID is visible on host's screen.
+3. Type ` .kaheet [id <QuizID>] / [name <kahoot name>]`.
 
-  e.g. `https://play.kahoot.it/v2/lobby?quizId=`**`4487beab-3d31-4e9e-8d94-94ef15f87230`**
-</details>
-  
-# Bugs
-- 
-
-## Other
+# Suggestions
 Pull requests are welcome!
+
+# Any problems?
+Create an issue
