@@ -1,5 +1,7 @@
 ## kaheet-kahoot-cheat
 
+# PLEASE VISIT [KAHEET](https://github.com/pxtrez/kaheet)
+
 # How to use?
 1. Open [kahoot](https://kahoot.it/)
 2. Right click, inspect (open console)
@@ -24,12 +26,6 @@ fetch("https://raw.githubusercontent.com/pxtrez/kaheet-kahoot-cheat/main/dist/sc
 <img src="./docs/preview.png" width="70%"></br></br></br>
 
 cheat supports images in kahoot quizzes!
-
-Join our [Discord](https://dsc.gg/elekcje) to access searching quiz by name, not QuizID<br><br>
-## How to use kaheet bot on discord?
-1. Join our discord.
-2. Open `︴🤖・commands` channel.
-3. Type ` .kaheet [id <QuizID>] / [name <kahoot name>]`.
 
 # Suggestions
 Pull requests are welcome!
